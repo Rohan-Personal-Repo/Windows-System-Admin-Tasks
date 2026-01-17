@@ -106,7 +106,7 @@ Windows-System-Administration/
 
 ### **1. Clone the Repository**
 ```powershell
-git clone https://github.com/Rohan-Repo/Windows-System-Admin-Tasks.git
+git clone https://github.com/Rohan-Personal-Repo/Windows-System-Admin-Tasks.git
 cd Windows
 ```
 
