@@ -1,0 +1,40 @@
+AD Users Export CSV and JSON:
+https://www.easy365manager.com/active-directory-user-export-tool-csv-json/
+
+List of All Users under a particular OU:
+PS C:\Users\Administrator>  Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf 
+
+Selective Properties under each OU:
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName
+
+PS C:\Users\Administrator>  Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf, Enabled
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf, Name
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf, Name, Enabled
+
+Create a CSV of Selective Properties under each OU:
+
+Export CSV With Types:
+Memberof Not coming properly so eliminate it:
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, Enabled | Export-Csv -Path .\UsersWithType.csv
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf, Enabled | Export-Csv -Path .\UsersWithType.csv
+
+Export CSV Without Types:
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, Enabled | Export-Csv -Path .\UsersWithoutType.csv -NoTypeInformation
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select-Object SamAccountName, UserPrincipalName, MemberOf, Enabled | Export-Csv -Path .\UsersWithoutType.csv -NoTypeInformation
+
+Export CSV with MemberOf converted to String:
+	Without Type:
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select -Property SamAccountName, UserPrincipalName, @{Name='MemberOf';Expression={$_.MemberOf -join ';'}}, Name | Export-Csv -Path .\UsersWithoutType.csv -NoTypeInformation
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select -Property SamAccountName, UserPrincipalName, @{Name='MemberOf';Expression={$_.MemberOf -join ';'}}, Name, Enabled | Export-Csv -Path .\UsersWithoutType.csv -NoTypeInformation
+
+	With Type:
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select -Property SamAccountName, UserPrincipalName, @{Name='MemberOf';Expression={$_.MemberOf -join ';'}}, Name | Export-Csv -Path .\UsersWithType.csv
+
+PS C:\TableEg> Get-ADUser -SearchBase "OU=NP-Chat-App,DC=EASYSYSTEMS,DC=in" -Filter * -Properties MemberOf | Select -Property SamAccountName, UserPrincipalName, @{Name='MemberOf';Expression={$_.MemberOf -join ';'}}, Name, Enabled | Export-Csv -Path .\UsersWithType.csv

@@ -1,0 +1,14 @@
+Create OU and Security Group using PowerShell:
+New-ADOrganizationalUnit -Name "South-Korea" -Path "OU=NP-Chat-App,DC=easysystems,DC=in" -ProtectedFromAccidentalDeletion $True
+
+New-ADGroup -Name Sales -GroupCategory “Security” -GroupScope “Global” -Path "OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in"
+
+Create and Add User using Powershell:
+
+New-ADUser -Name "Gunther" -GivenName "Gunther" -SamAccountName "gunther" -UserPrincipalName "gunther@easysystems.in" -Path "OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in" -AccountPassword (ConvertTo-SecureString -AsPlainText "Pass@12345" -Force) -ChangePasswordAtLogon $True -Enabled $true
+
+Add User to the Group using Powershell:
+Add-ADGroupMember -Identity "Sales" -Members gunther
+
+Get User Information:
+Get-ADUser -Identity gunther -Properties MemberOf

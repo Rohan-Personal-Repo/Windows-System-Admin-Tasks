@@ -1,0 +1,123 @@
+AD User Info 
+
+To print All properties:
+PS C:\Users\Administrator> Get-ADUser -Identity userName -Properties *
+
+To print certain properties:
+MemberOf -> To get Group Information 
+PasswordLastSet -> Should be blank, which indicates User needs to change the password at their next logOn
+
+PS C:\Users\Administrator> Get-ADUser -Identity userName -Properties MemberOf, PasswordLastSet
+Eg.
+PS C:\Users\Administrator> Get-ADUser -Identity john.doe -Properties MemberOf, PasswordLastSet
+
+DistinguishedName : CN=John Doe,OU=CA,OU=QWERTY,DC=easysystems,DC=in
+Enabled           : True
+GivenName         : John
+MemberOf          : {CN=ABC,OU=CA,OU=QWERTY,DC=easysystems,DC=in}
+Name              : John Doe
+ObjectClass       : user
+ObjectGUID        : 8dc8195c-7d8d-49c4-a816-aabe1dd8994c
+PasswordLastSet   : 1/28/2025 1:04:14 PM
+SamAccountName    : john.doe
+SID               : S-1-5-21-4146652394-3385847439-3732338347-1125
+Surname           : Doe
+UserPrincipalName : john.doe@easysystems.in
+
+PS C:\Users\Administrator> Get-ADUser -Identity chandler.bing -Properties MemberOf
+
+DistinguishedName : CN=Chandler M. Bing,OU=Canada,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : True
+GivenName         : Chandler
+MemberOf          : {CN=ProjectManagers,OU=Canada,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Chandler M. Bing
+ObjectClass       : user
+ObjectGUID        : 43e8053b-5c76-4e2f-8407-aec68d2e59c4
+SamAccountName    : chandler.bing
+SID               : S-1-5-21-37218416-3238955104-3216896240-1131
+Surname           : Bing
+UserPrincipalName : chandler.bing@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity monica.geller -Properties MemberOf
+
+DistinguishedName : CN=Monica F. Geller,OU=Canada,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : True
+GivenName         : Monica
+MemberOf          : {CN=TeamLead,OU=Canada,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Monica F. Geller
+ObjectClass       : user
+ObjectGUID        : 9f7307a5-5d96-4f7f-a3f3-204a00c7639a
+SamAccountName    : monica.geller
+SID               : S-1-5-21-37218416-3238955104-3216896240-1139
+Surname           : Geller
+UserPrincipalName : monica.geller@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity joey.tribbiani -Properties MemberOf
+
+DistinguishedName : CN=Joey D. Tribbiani,OU=Philippines,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : True
+GivenName         : Joey
+MemberOf          : {CN=SystemAdmins,OU=Philippines,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Joey D. Tribbiani
+ObjectClass       : user
+ObjectGUID        : 3772edae-714e-48b0-a864-5487dddf14ac
+SamAccountName    : joey.tribbiani
+SID               : S-1-5-21-37218416-3238955104-3216896240-1140
+Surname           : Tribbiani
+UserPrincipalName : joey.tribbiani@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity ross.geller -Properties MemberOf
+
+DistinguishedName : CN=Ross A. Geller,OU=India,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : True
+GivenName         : Ross
+MemberOf          : {CN=Developers,OU=India,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Ross A. Geller
+ObjectClass       : user
+ObjectGUID        : c1094261-9a1a-4abd-a9eb-c7f48cb53c1a
+SamAccountName    : ross.geller
+SID               : S-1-5-21-37218416-3238955104-3216896240-1135
+Surname           : Geller
+UserPrincipalName : ross.geller@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity phoebe.buffay -Properties MemberOf
+
+DistinguishedName : CN=Phoebe B. Buffay,OU=India,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : False
+GivenName         : Phoebe
+MemberOf          : {CN=Testers,OU=India,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Phoebe B. Buffay
+ObjectClass       : user
+ObjectGUID        : 439810a3-098f-4a1b-83f2-5923f35716fb
+SamAccountName    : phoebe.buffay
+SID               : S-1-5-21-37218416-3238955104-3216896240-1136
+Surname           : Buffay
+UserPrincipalName : phoebe.buffay@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity rachel.greene -Properties MemberOf
+
+DistinguishedName : CN=Rachel K. Greene,OU=Philippines,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : True
+GivenName         : Rachel
+MemberOf          : {CN=Support,OU=Philippines,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : Rachel K. Greene
+ObjectClass       : user
+ObjectGUID        : cec5e819-34e7-488d-af1c-5f64d4c0b795
+SamAccountName    : rachel.greene
+SID               : S-1-5-21-37218416-3238955104-3216896240-1142
+Surname           : Greene
+UserPrincipalName : rachel.greene@easysystems.local
+
+PS C:\Users\Administrator> Get-ADUser -Identity john.doe -Properties MemberOf
+
+DistinguishedName : CN=John A. Doe,OU=SouthKorea,OU=NPChatApp,DC=easysystems,DC=local
+Enabled           : False
+GivenName         : John
+MemberOf          : {CN=Sales,OU=SouthKorea,OU=NPChatApp,DC=easysystems,DC=local}
+Name              : John A. Doe
+ObjectClass       : user
+ObjectGUID        : ef6e4290-6555-4706-aa75-1fce6f233da9
+SamAccountName    : john.doe
+SID               : S-1-5-21-37218416-3238955104-3216896240-1144
+Surname           : Doe
+UserPrincipalName : john.doe@easysystems.local

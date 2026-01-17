@@ -1,0 +1,5 @@
+SamAccountName,UserPrincipalName,MemberOf,Name,Enabled
+jack.geller,jack.geller@easysystems.in,"CN=Developer,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in",Jack Geller,TRUE
+janice,janice@easysystems.in,"CN=Team-Lead,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in",Janice,TRUE
+mike.hannigan,mike.hannigan@easysystems.in,"CN=SystemAdmin,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in",Mike Hannigan,FALSE
+nora.bing,nora.bing@easysystems.in,"CN=Sales,OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in",Nora Bing,FALSE

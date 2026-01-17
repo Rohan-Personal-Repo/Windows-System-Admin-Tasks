@@ -1,0 +1,9 @@
+#TYPE Selected.Microsoft.ActiveDirectory.Management.ADUser
+"SamAccountName","UserPrincipalName","MemberOf","Name"
+"chandler.bing","chandler.bing@easysystems.in","CN=Project-Manager,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in","Chandler M. Bing"
+"ross.geller","ross.geller@easysystems.in","CN=Developer,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in","Ross Geller"
+"phoebe.buffay","phoebe.buffay@easysystems.in","CN=Tester,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in","Phoebe Buffay"
+"monica.geller","monica.geller@easysystems.in","CN=Team-Lead,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in","Monica Geller"
+"joey.tribbiani","joey.tribbiani@easysystems.in","CN=SystemAdmin,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in","Joey F. Tribbiani"
+"rachel.greene","rachel.greene@easysystems.in","CN=Support,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in","Rachel K. Greene"
+"gunther","gunther@easysystems.in","CN=Sales,OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in","Gunther"

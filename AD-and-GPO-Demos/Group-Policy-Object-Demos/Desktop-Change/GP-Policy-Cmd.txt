@@ -1,0 +1,11 @@
+Location : \\WS2K19\CommonWP
+
+Command: 
+
+C:\Users\Administrator>gpupdate /force
+Updating policy...
+
+Computer Policy update has completed successfully.
+User Policy update has completed successfully.
+
+C:\Users\Administrator>logoff

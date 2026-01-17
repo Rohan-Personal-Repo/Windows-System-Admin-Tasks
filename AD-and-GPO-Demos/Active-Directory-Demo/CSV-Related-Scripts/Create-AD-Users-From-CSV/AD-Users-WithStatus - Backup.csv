@@ -1,0 +1,8 @@
+SamAccountName,UserPrincipalName,MemberOf,Name,Enabled
+chandler.m.bing,chandler.m.bing@easysystems.in,"CN=Project-Manager,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in",Chandler Bing,TRUE
+ross.j.geller,ross.j.geller@easysystems.in,"CN=Developer,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in",Ross J Geller,TRUE
+phoebe.a.buffay,phoebe.a.buffay@easysystems.in,"CN=Tester,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in",Phoebe A Buffay,FALSE
+monica.f.geller,monica.f.geller@easysystems.in,"CN=Team-Lead,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in",Monica F Geller,FALSE
+joey.f.tribbiani,joey.f.tribbiani@easysystems.in,"CN=SystemAdmin,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in",Joey Tribbiani,TRUE
+rachel.k.greene,rachel.k.greene@easysystems.in,"CN=Support,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in",Rachel Greene,FALSE
+gunther.cp,gunther.cp@easysystems.in,"CN=Sales,OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in",Gunther CP,FALSE

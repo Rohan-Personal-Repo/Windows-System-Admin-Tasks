@@ -1,0 +1,82 @@
+New-ADUser -Name "Jack Robinson" -GivenName "Jack" -Surname "Robinson" -SamAccountName "J.Robinson" -UserPrincipalName "J.Robinson@enterprise.com" -Path "OU=Managers,DC=enterprise,DC=in" -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true
+
+New-ADUser -Name "Jason Bourne" -GivenName "Jason" -Surname "Bourne" -SamAccountName "Jason-Bourne" -AccountPassword (ConvertTo-SecureString -AsPlainText “webdir123R” -Force) -ChangePasswordAtLogon $True -Company "Versacorp" -Title "CEO" -State "California" -City "San Francisco" -Description "Test Account Creation" -EmployeeNumber "45" -Department "Engineering" -DisplayName "Jason Bourne" -Country "US" -PostalCode "94001" -Enabled $True
+
+New-ADUser -Name "Joey" -GivenName "Joey" -Surname "Tribbiani" -SamAccountName "joey.tribbiani" -AccountPassword (ConvertTo-SecureString -AsPlainText “Pass@12345” -Force) -ChangePasswordAtLogon $True -State "Metro Manila" -City "Manila" -DisplayName "Joey Tribbiani" -Country "Phillipines" -Enabled $True
+
+-----------------xxxxxxxxxxxxxxxxx---------------------
+OU:
+https://blog.netwrix.com/2024/02/19/active-directory-organizational-unit-ou/
+
+Security Group V/s Distribution Groups:
+MS: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups
+Extra : https://blog.netwrix.com/2023/04/28/active-directory-security-groups-vs-distribution-groups/
+https://blog.netwrix.com/2023/03/27/new-adgroup-powershell-cmdlet/
+
+Users :
+https://blog.netwrix.com/how-to-create-new-active-directory-users-with-powershell
+https://blog.netwrix.com/add-users-in-group-via-add-adgroupmember-powershell-cmdlet/
+
+
+Create a User :
+
+0. Create OU and Security Group in ADAC User & Group via GUI
+
+1. Create User in GUI and then add them to the Group (Add to a Group)
+
+2. Create User in GUI and then Go to Group properties and add them by searching their name
+
+3. Create a User using powershell but enter their password while running the command:
+
+New-ADUser -Name "Monica" -GivenName "Monica" -Surname "Geller" -SamAccountName "monica.geller" -UserPrincipalName "monica.geller@easysystems.in" -Path "OU=Phillipines,OU=NPChatApp,DC=easysystems,DC=in" -AccountPassword(Read-Host -AsSecureString "Enter password") -Enabled $true
+
+4. Create a User using powershell but set a default password and ask them to change at their next logon:
+
+New-ADUser -Name "Joey" -GivenName "Joey" -Surname "Tribbiani" -SamAccountName "joey.tribbiani" -UserPrincipalName "joey.tribbiani@easysystems.in" -Path "OU=Phillipines,OU=NPChatApp,DC=easysystems,DC=in" -AccountPassword (ConvertTo-SecureString -AsPlainText “Pass@12345” -Force) -ChangePasswordAtLogon $True -Enabled $true
+
+5. Add them to the Group :
+Add-ADGroupMember -Identity "SysAdmin" -Members monica.geller
+Add-ADGroupMember -Identity "Support" -Members joey.tribbiani
+
+6. Get User Information:
+To print All properties:
+PS C:\Users\Administrator> Get-ADUser -Identity userName -Properties *
+
+To print certain properties:
+MemberOf -> To get Group Information 
+PasswordLastSet -> Should be blank, which indicates User needs to change the password at their next logOn
+
+PS C:\Users\Administrator> Get-ADUser -Identity userName -Properties MemberOf, PasswordLastSet
+
+Get-ADUser -Identity monica.geller -Properties MemberOf, PasswordLastSet
+
+7. To print Group Members:
+PS C:\Users\Administrator> Get-ADGroupMember -Identity groupName
+
+Get-ADGroupMember -Identity "SysAdmin"
+
+8. Remove a member from a group:
+A) Delete from GUI
+Move Monica to Canada
+Add User to particular Group ( Tech Lead [Newly created Group] )
+Delete User from a particular Group ( SysAdmins )
+
+B) Using Powershell
+
+Add Joey to SysAdmin:
+Add-ADGroupMember -Identity "SysAdmin" -Members joey.tribbiani
+
+View to see they are a part of two OU's: Support and SysAdmin
+Get-ADUser -Identity joey.tribbiani -Properties MemberOf
+
+Remove Joey from Support Group:
+Remove-ADGroupMember -Identity "Support" -Members joey.tribbiani
+Confirm
+Are you sure you want to perform this action?
+Performing the operation "Set" on target "CN=Support,OU=Phillipines,OU=NPChatApp,DC=easysystems,DC=in".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): y
+
+Cross-Check:
+PS C:\Users\Administrator> Get-ADUser -Identity joey.tribbiani -Properties MemberOf
+
+Since we have safe delete option working, we need to ensure we go into ADAC and then navigate to the appropriate OU and then Properties and then uncheck the option -> Protect from accidental deletion -> OK [Check Image]
