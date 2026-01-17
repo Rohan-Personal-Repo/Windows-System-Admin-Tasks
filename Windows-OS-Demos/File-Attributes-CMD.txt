@@ -1,0 +1,40 @@
+Get File Attribute Details - CMD Prompt:
+
+Populate File :
+
+PS C:\Admin> echo "File from my Windows10 System" >> Info.txt
+PS C:\Admin> Get-Date >> .\Info.txt
+PS C:\Admin> cat .\Info.txt
+File from my Windows10 System
+
+16 January 2026 23:42:33
+
+Get Attributes:
+PS C:\Admin> attrib .\Info.txt
+A                    C:\Admin\Info.txt
+
+Set Attributes:
+1. Convert File to ReadOnly:
+PS C:\Admin> attrib +r .\Info.txt
+PS C:\Admin> attrib .\Info.txt
+A    R               C:\Admin\Info.txt
+
+Unable to Write to File as it is ReadOnly:
+PS C:\Admin> echo "Hi" >> .\Info.txt
+out-file : Access to the path 'C:\Admin\Info.txt' is denied.
+At line:1 char:1
++ echo "Hi" >> .\Info.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+2. Hide the File:
+PS C:\Admin> attrib +h .\Info.txt
+PS C:\Admin> attrib .\Info.txt
+A   HR               C:\Admin\Info.txt
+
+unHide the File:
+PS C:\Admin> attrib -h .\Info.txt
+
+PS C:\Admin> attrib .\Info.txt
+A    R               C:\Admin\Info.txt

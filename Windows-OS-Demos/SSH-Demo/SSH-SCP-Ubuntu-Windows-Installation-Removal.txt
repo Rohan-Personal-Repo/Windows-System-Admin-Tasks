@@ -1,0 +1,96 @@
+For RDP into Windows System:
+https://support.microsoft.com/en-us/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c
+
+For SSH on Ubuntu:
+Create user with Home Directory, Default Shell and by default sudo privileges:
+
+$ sudo useradd remoteConnUser -m -s /bin/bash -G sudo
+$ sudo passwd remoteConnUser
+
+Install openssh-server on Ubuntu:
+$ sudo apt update
+
+$ sudo apt install openssh-server
+
+; Allow SSH Connections
+$ sudo ufw allow ssh
+
+; Check SSH status
+$ sudo systemctl status ssh
+
+; If Service is not running
+$ sudo systemctl start ssh
+
+Install openssh-server on Windows : Follow below URL-
+https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell&pivots=windows-server-2022
+
+Find out the IP Address :
+Ubuntu : ip addr show
+Windows: ipconfig
+
+SSH to Windows or Linux System:
+ssh user_name@destination_IP_Address
+
+Find out the Users Connected to your Remote Server:
+Windows : query user or quser
+Linux : w or who
+
+Add Firewall Rules if necessary :
+New-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -DisplayName "OpenSSH Server (TCP)" -Protocol TCP -LocalPort 22 -Action Allow -Enabled True
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Protocol TCP -Action Allow -Direction Inbound -LocalPort 22
+
+If not working after Adding Firewall Rules (Last Resort):
+Navigate to : C:\ProgramData\ssh\sshd_config
+
+Uncomment the following lines:
+Port 22
+ListenAddress 0.0.0.0
+PasswordAuthentication yes
+
+Restart the SSH Service:
+Restart-Service sshd
+
+Windows Search SSH Users:
+Get-Process -IncludeUserName | Where-Object { $_.UserName -like "*SSH-Demo*" }
+
+SCP:
+; Single File
+scp source_path user_name@destination_IP_Address:destination_file_path
+
+; Complete Folder
+scp -r source_folder_path user_name@destination_IP_Address:destination_file_path
+
+Delete Old Hosts from known_hosts file :
+
+Find the Host based on IP-Address: (-F)
+PS C:\Users\AdminUser> ssh-keygen -F 192.168.2.37
+
+Remove the Host: (-R)
+PS C:\Users\AdminUser> ssh-keygen -R 192.168.2.37
+
+View Contents:
+PS C:\Users\AdminUser> cat .\.ssh\known_hosts
+
+Delete SSH Rules on Firewall:
+$ sudo ufw delete allow ssh
+
+Remove SSH Server Ubuntu:
+$ sudo systemctl status ssh
+$ sudo systemctl stop ssh
+$ sudo systemctl status ssh
+
+$ sudo systemctl status ssh.socket
+$ sudo systemctl stop ssh.socket
+$ sudo systemctl status ssh.socket
+
+Remove SSH-Server from the Server alongwith config files:
+$ sudo apt remove --purge openssh-server
+
+$ sudo systemctl status ssh.socket
+Unit ssh.socket could not be found.
+
+$ sudo systemctl status ssh
+Unit ssh.service could not be found.
+
+Cleaning up unnecessary packages:
+sudo apt autoremove -y && sudo apt autoclean -y

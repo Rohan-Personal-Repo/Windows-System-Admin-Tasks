@@ -1,0 +1,44 @@
+NTP Demo: The minute we change the TimeZone Date is Synchronized in all the Places
+
+On Ubuntu Terminal and Windows PowerShell:
+
+On Ubuntu:
+On Terminal : 
+$ date
+Thu Mar 13 03:42:11 PM EDT 2025
+
+On Browser Developer Console :
+new Date()
+Thu Mar 13 2025 15:43:19 GMT-0400 (Eastern Daylight Time)
+﻿
+Ubuntu:
+Settings -> System -> Date and Time -> Time Zone -> Change to Melbourne Australia
+
+On Terminal : 
+$ date
+Fri Mar 14 06:44:56 AM AEDT 2025
+
+On Browser Developer Console :
+new Date()
+Fri Mar 14 2025 06:45:43 GMT+1100 (Australian Eastern Daylight Time)
+
+Windows :
+On PowerShell (Close after showing for EDT and Re-Open for the Next TimeZone):
+Get-Date
+Thursday, March 13, 2025 3:56:25 PM 
+
+On Browser Developer Console :
+new Date()
+Thu Mar 13 2025 15:43:19 GMT-0400 (Eastern Daylight Time)
+﻿
+Windows:
+Date and Time Settings from Start OR
+Settings -> Time and Language -> -> Time Zone -> Change to Seoul Korea
+
+On PowerShell:
+Get-Date
+Friday, March 14, 2025 5:02:04 AM
+
+On Browser Developer Console :
+new Date()
+Date Fri Mar 14 2025 05:00:28 GMT+0900 (Korean Standard Time)

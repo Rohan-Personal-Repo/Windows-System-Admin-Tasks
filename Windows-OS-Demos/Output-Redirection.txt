@@ -1,0 +1,38 @@
+Output Redirection:
+
+> To create a new file
+>> To append to the current file
+
+On Windows:
+PS C:\Users\admin> Get-Date > 12345.txt
+
+PS C:\Users\admin> cat .\12345.txt
+January 9, 2025 4:17:25 PM
+PS C:\Users\admin> whoami > 12345.txt
+
+PS C:\Users\admin> cat .\12345.txt
+azuread\admin
+
+PS C:\Users\admin> history >> 245678.txt
+PS C:\Users\admin> cat .\245678.txt
+
+  Id CommandLine
+  -- -----------
+   1 whoami
+   2 Get-Date
+   3 systeminfo
+   4 history
+   
+Linux:
+ubuntuadmin@Ubuntu-VM:~/userDir$ echo "Hello World!" > s23.txt
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat s23.txt 
+Hello World!
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ date > s23.txt
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat s23.txt 
+Thu Jan  9 04:20:23 PM EST 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ whoami >> s23.txt 
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat s23.txt 
+Thu Jan  9 04:20:23 PM EST 2025
+ubuntuadmin

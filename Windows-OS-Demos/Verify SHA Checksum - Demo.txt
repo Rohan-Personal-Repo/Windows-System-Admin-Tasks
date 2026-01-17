@@ -1,0 +1,50 @@
+Verify SHA Checksum:
+
+Alpine Linux ISO Download Link - https://www.alpinelinux.org/downloads/
+In Windows:
+
+Check File Hash/Checksum
+PS C:\Users\Downloads\Alpine> Get-FileHash .\alpine-standard-3.20.3-x86_64.iso -Algorithm SHA256
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          C66FC1E0470781F8ECBAB8EB9CC8D906066171A5E0C6C1AB20AEDC7061836D27       C:\Users\Downloads\Alpine\alpine-standard-3.20.3-x...
+
+Separate Hash Values from the above Output:
+PS C:\Users\Downloads\Alpine> (Get-FileHash .\alpine-standard-3.20.3-x86_64.iso -A SHA256).hash
+C66FC1E0470781F8ECBAB8EB9CC8D906066171A5E0C6C1AB20AEDC7061836D27
+
+Convert the Above Hash Files Hash Value to Lowercase
+PS C:\Users\Downloads\Alpine> (Get-FileHash .\alpine-standard-3.20.3-x86_64.iso -Algorithm SHA256).hash.ToLower()
+c66fc1e0470781f8ecbab8eb9cc8d906066171a5e0c6c1ab20aedc7061836d27
+
+Verify with SHA256 Key file from Alpine
+PS C:\Users\Downloads\Alpine> cat .\alpine-standard-3.20.3-x86_64.iso.sha256
+c66fc1e0470781f8ecbab8eb9cc8d906066171a5e0c6c1ab20aedc7061836d27  alpine-standard-3.20.3-x86_64.iso
+
+Extra:
+Filter Out Algo and Path from the O/P:
+PS C:\Users\Administrator\Downloads> (Get-FileHash .\alpine-standard-3.21.2-x86_64.iso -Algorithm SHA256).algorithm
+SHA256
+
+PS C:\Users\Administrator\Downloads> (Get-FileHash .\alpine-standard-3.21.2-x86_64.iso -Algorithm SHA256).path
+C:\Users\Administrator\Downloads\alpine-standard-3.21.2-x86_64.iso
+
+Check File Hash/Checksum - Display in a Formatted way
+PS C:\Users\Downloads\Alpine> Get-FileHash .\alpine-standard-3.20.3-x86_64.iso -Algorithm SHA256 | Format-List
+Algorithm : SHA256
+Hash      : C66FC1E0470781F8ECBAB8EB9CC8D906066171A5E0C6C1AB20AEDC7061836D27
+Path      : C:\Users\Downloads\Alpine\alpine-standard-3.20.3-x86_64.iso
+
+In Ubuntu:
+Check File Hash/Checksum
+ubuntuadmin@Ubuntu-VM:~/Downloads$ sha256sum -c alpine-standard-3.20.3-x86_64.iso.sha256 
+alpine-standard-3.20.3-x86_64.iso: OK
+
+Calculate File Hash/Checksum
+ubuntuadmin@Ubuntu-VM:~/Downloads$ sha256sum alpine-standard-3.20.3-x86_64.iso
+c66fc1e0470781f8ecbab8eb9cc8d906066171a5e0c6c1ab20aedc7061836d27  alpine-standard-3.20.3-x86_64.iso
+
+Verify with SHA256 Key file from Alpine
+ubuntuadmin@Ubuntu-VM:~/Downloads$ cat alpine-standard-3.20.3-x86_64.iso.sha256 
+c66fc1e0470781f8ecbab8eb9cc8d906066171a5e0c6c1ab20aedc7061836d27  alpine-standard-3.20.3-x86_64.iso

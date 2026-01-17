@@ -1,0 +1,50 @@
+Windows:
+
+List of all running processes:
+tasklist
+
+Filter By Name:
+
+Notepad: tasklist | find "Notepad"
+
+VSCode: tasklist | find "Code"
+
+Calculator: tasklist | find "calc"
+
+Kill the Process:
+/F for forcefully and /pid for specifying the ProcessID
+taskkill /F /pid 15728
+
+/F for forcefully and /im for specifying the Application Name
+taskkill /F /im "CalculatorApp.exe"
+
+Powershell:
+
+List of all running processes:
+Get-Process
+
+Filter By Name:
+
+Calculator: Get-Process | Select-String -Pattern "calc"
+
+Individual Process Info: Get-Process -Name "CalculatorApp"
+
+Kill the Process: Stop-Process -Name "CalculatorApp"
+
+Linux:
+Background process:
+gedit & 
+[1] 4101
+
+
+Get process Info:
+ps -ef
+ps -aux
+
+
+Filter Data: ps -ef | grep gedit
+
+Kill the Process:
+kill -9 
+
+kill -9 4101

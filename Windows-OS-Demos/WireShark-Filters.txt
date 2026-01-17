@@ -1,0 +1,39 @@
+WireShark:
+
+A) Filter by ID Address:
+$ ip.addr == 192.168.2.38
+
+B) Filter by Protocol
+
+$ icmp - Ping
+ping google.ca on Ubuntu VM
+
+$ ftp - File Transfer Protocol
+ftp 192.168.2.38 on Powershell
+Enter userName and Password and show it's visible in Plain Text
+
+$ http - Http
+$ tcp - Website Search
+
+
+Sample HTTP Website :
+Google : columbia edu sample, if not found 
+URL :  http://www.columbia.edu/~fdc/sample.html
+Find IP on Chromium Dev Tools and then: 
+$ ip.addr == 162.159.138.64 and tcp
+
+tcp - 3-Way Handshake [SYN, SYN->ACK, ACK]
+
+To see Website Content filter by HTTP and find the Packet with "/~fdc/sample.html" and right click Follow HTTP Stream:
+$ http
+
+Website Search or Even SCP Establishes 3 Way Handshake:
+On Powershell:
+scp .\Sample-Login-Form.html ubuntuadmin@192.168.2.38:/home/ubuntuadmin/HTMLFiles
+
+Add Filters :
+$ ip.addr == 192.168.2.38 and tcp
+
+Clear O/P everytime to get good details
+
+Wireshark Reference Video -  https://www.youtube.com/watch?v=qTaOZrDnMzQ

@@ -1,0 +1,30 @@
+DHCP:
+
+ipconfig /all
+
+ipconfig /release
+
+ipconfig /renew
+
+DNS:
+General Values:
+nslookup google.com
+
+View Name Server records.
+nslookup -type=ns google.com
+
+nslookup -type=ns amazon.ca
+
+View Mail Exchange server information.
+nslookup -type=mx google.com
+
+nslookup -type=mx amazon.ca
+
+Lookup A and AAAA records:
+nslookup -type=A+AAAA amazon.ca
+
+
+Flush DNS in Windows 8, 10, and 11
+ipconfig /flushdns
+
+The DNS Cache database on your computer is now empty. The next time your machine sends a DNS query, you should get the correct and updated IP mapping from DNS servers.

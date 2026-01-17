@@ -1,0 +1,16 @@
+Show Routing Info:
+
+Windows :
+IPv6 and IPv4:
+route print
+
+IPv4:
+route print -4
+
+IPv6:
+route print -6
+
+Ubuntu:
+sudo apt install net-tools
+
+netstat -r

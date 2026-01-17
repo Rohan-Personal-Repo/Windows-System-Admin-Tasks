@@ -1,0 +1,61 @@
+Managing Windows permissions with CLI
+icacls - View or Change Permissions for Files and Directories
+
+Setting ACL's using Windows CLI - icacls
+
+Create a folder:
+PS C:\> mkdir ICACLS-Demo
+
+PS C:\My_Content> cd ..\ICACLS-Demo\
+
+Create a new file:
+PS C:\ICACLS-Demo> new-item SampleText.txt
+
+PS C:\> icacls .\ICACLS-Demo\
+.\ICACLS-Demo\ NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)     [System Users] 
+                    BUILTIN\Administrators:(I)(OI)(CI)(F)  [Administrator Users]
+                    BUILTIN\Users:(I)(OI)(CI)(RX)		   [Normal Users]
+                    BUILTIN\Users:(I)(CI)(AD)
+                    BUILTIN\Users:(I)(CI)(WD)
+                    CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+
+F - Full Control ; R - Read ; M - Modify ; RX - Read & Execute ; W - Write
+
+Any permission you give to User on a directory will also allow the same for other files in that directory
+
+I - Inheritance - Permissions passed down from parent directory
+OI - Object Inheritance - Every file inside that directory will inherit my permissions
+CI - Container Inheritance - Every folder inside that directory will inherit my permissions
+
+So User should have complete Control on everything in the Folder then it should have (OI) (CI) (F)
+
+Trial Read Access to User - john.doe:
+PS C:\> icacls .\ICACLS-Demo\ /grant john.doe:r
+processed file: .\ICACLS-Demo\
+Successfully processed 1 files; Failed processing 0 files
+
+PS C:\> icacls .\ICACLS-Demo\
+.\ICACLS-Demo\easysystems\john.doe:(R)
+
+Remove Read access to user - john.doe
+PS C:\> icacls .\ICACLS-Demo\ /remove john.doe
+processed file: .\ICACLS-Demo\
+Successfully processed 1 files; Failed processing 0 files
+
+PS C:\> icacls .\ICACLS-Demo\
+
+Let's give OI, CI, R & W permission to user john.doe
+
+PS C:\> icacls .\ICACLS-Demo\ /grant john.doe:(OI)(CI)rw
+PS C:\> icacls .\ICACLS-Demo\ /grant john.doe:(OI)(CI)rw
+OI : The term 'OI' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the command
+
+As icacls was created for Command prompt to ensure it works well in Powershell we add --%
+This helps you ignore parenthesis
+
+PS C:\> icacls .\ICACLS-Demo\ --% /grant john.doe:(OI)(CI)rw
+processed file: .\ICACLS-Demo\
+Successfully processed 1 files; Failed processing 0 files
+
+PS C:\> icacls .\ICACLS-Demo\
+.\ICACLS-Demo\easysystems\john.doe:(OI)(CI)(R,W)

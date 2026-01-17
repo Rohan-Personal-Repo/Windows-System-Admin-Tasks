@@ -1,0 +1,46 @@
+Creating Users in Windows :
+
+1. net user:
+
+Create ; Ensure your password is according to Password Policy:
+	net user userName * /add
+
+PS C:\Users\Administrator> net user john.doe * /add
+Type a password for the user:
+Retype the password to confirm:
+The command completed successfully.
+
+Get List of Users:
+PS C:\Users\Administrator> Get-LocalUser
+
+Remove:
+	net user userName /delete
+
+PS C:\Users\Administrator> net user john.doe /delete
+The command completed successfully.
+
+One Line with Change Password :
+net user john_doe TempPwd@987 /add /logonpasswordchg:yes
+
+2. Create : New-LocalUser
+PS C:\Users\Administrator> New-LocalUser -name "jane.doe" --fullname "Jane Doe" -description "Tester" -password "pass1234"
+Password needs to be a secure string
+New-LocalUser : Cannot bind parameter 'Password'. Cannot convert the "pass1234" value of type "System.String" to
+type "System.Security.SecureString".
+
+So store the password as a SecureString variable
+PS C:\Users\Administrator> $janePassword = read-host -AsSecureString
+**********
+
+Then pass it as a parameter:
+PS C:\Users\Administrator> New-LocalUser -name "jane.doe" -fullname "Jane Doe" -description "Tester" -password $janePassword
+
+Name     Enabled Description
+----     ------- -----------
+jane.doe True    Tester
+
+To delete the user : Remove-LocalUser 
+PS C:\Users\Administrator> Remove-LocalUser -name jane.doe
+
+Remove multiple users :
+PS C:\Users\Administrator> Remove-LocalUser -Name "John_Doe","JaD_JoD", "John_Jane", "John_Jane_Doe"

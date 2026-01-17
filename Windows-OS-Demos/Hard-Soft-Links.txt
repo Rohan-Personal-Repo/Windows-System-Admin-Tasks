@@ -1,0 +1,162 @@
+Windows - Symbolic Links and Hard Links
+Linux - Hard Links and Soft Links
+
+Symbolic Links or Soft Links - Point to that file [Pointer]
+
+Simplest example would be Shortcuts - You are pointing to the .exe file of the Chrome, you don't need to have multiple copies of the files, we keep running the same copy of the software again and again, by pointing to the Original file. Eg. Show a Shortcut -> Properties -> Target
+So we don't have to expose the Code just the target exe file 
+
+Hard Links - Think of them as dependency files/libraries. From a S/W installation perspective, you create the location, you update it in your config files and you connect them but in the future when the version changes for the libs you don't have to worry, just include the location and you will get the requisite new files. So it's like a connection, everytime the source file gets updated, your file gets updated too.
+
+So we don't expose the original file to the user or harm the orginal file in anyway.
+So basically, FireFox can be installed in once location but every user can access that orignal file from the same location, so just create a Softlink(Shortcut) and use it from multiple places. (For eg. copy Firefox Desktop shortcut into any folder & show it points to the same original target file.)
+
+Eg. create a sample Desktop Create Shortcut for any local file and then show target, then now if we delete the original file in the location Softlink won't work and it will give an error.
+
+Another example would be when we are installing certain Software it asks us: Do you want to install for this User or all the Users, that will also be another usecase.
+--------
+Shortcuts (Symbolic Links):
+A simple real-life example of symbolic links is a shortcut. For instance, when you create a shortcut to the Chrome .exe file, you aren't duplicating the Chrome application itself. Instead, you're pointing to the original file. You can run the application through the shortcut, but it always references and uses the same copy of Chrome. In this case, the shortcut acts like a pointer to the original file, so you don’t need multiple copies of the program. You can see this when you right-click a shortcut, select Properties, and look at the Target path, which points to the original file.
+
+Hard Links:
+A hard link is like a shared reference to a file or library. Imagine you have a software program that depends on external libraries (e.g., .dll files). Instead of copying these libraries into each software version or location, you can create hard links to the same library file. This way, every time the source library gets updated, the linked file automatically reflects those updates. It ensures that all programs or installations that point to the library are using the most recent version without having to manually update each instance. The benefit is that you only maintain one copy of the data on disk, but it’s accessible from multiple locations, acting like a connection to the original file.
+--------
+
+
+Hard Links - Mirror Copies of the files [Check file Size]
+
+Windows :
+
+Symbolic: mklink softLink targetFile
+Hardlink: mklink /H hardLink targetFile
+
+Sample Data:
+PS C:\userDir> whoami >> outFile.txt
+PS C:\userDir> Get-Date >> outFile.txt
+PS C:\userDir> cat .\outFile.txt
+easysystems\administrator
+
+Monday, January 20, 2025 4:15:21 PM
+
+C:\userDir>mklink win_softLink outFile.txt
+symbolic link created for win_softLink <<===>> outFile.txt
+
+C:\userDir>mklink /H win_hardLink outFile.txt
+Hardlink created for win_hardLink <<===>> outFile.txt
+
+C:\userDir>dir
+01/20/2025  04:15 PM               132 outFile.txt
+01/20/2025  04:15 PM               132 win_hardLink
+01/20/2025  04:16 PM    <SYMLINK>      win_softLink [outFile.txt]
+
+Update one file it gets updated into others:
+
+PS C:\userDir> (Get-Date).ToUniversalTime() >> .\outFile.txt
+
+PS C:\userDir> cat .\outFile.txt
+easysystems\administrator
+Monday, January 20, 2025 4:31:24 PM
+Monday, January 20, 2025 9:33:42 PM
+
+PS C:\userDir> cat .\win_hardLink
+easysystems\administrator
+Monday, January 20, 2025 4:31:24 PM
+Monday, January 20, 2025 9:33:42 PM
+
+PS C:\userDir> cat .\win_softLink
+easysystems\administrator
+Monday, January 20, 2025 4:31:24 PM
+Monday, January 20, 2025 9:33:42 PM
+
+Removed original file:
+PS C:\userDir> rm .\outFile.txt
+
+win_hardLink file is still visible on Notepad++ or Powershell
+Data retained in the Hard-Link:
+PS C:\userDir> cat .\win_hardLink
+easysystems\administrator
+Monday, January 20, 2025 4:31:24 PM
+Monday, January 20, 2025 9:33:42 PM
+
+win_softLink is pointing to a file which does not even exist anymore
+
+PS C:\userDir> cat .\win_softLink
+cat : Could not find file 'C:\userDir\win_softLink'.
+At line:1 char:1
++ cat .\win_softLink
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\userDir\win_softLink:String) [Get-Content], FileNotFoundExcepti
+   on
+    + FullyQualifiedErrorId : GetContentReaderFileNotFoundError,Microsoft.PowerShell.Commands.GetContentCommand
+
+Linux:
+
+Softlink : ln -s targetFile softLink
+Hardlink : ln targetFile hardLink
+
+Create file with sample data
+ubuntuadmin@Ubuntu-VM:~/userDir$ whoami >> outFile.txt
+ubuntuadmin@Ubuntu-VM:~/userDir$ date >> outFile.txt 
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat outFile.txt 
+ubuntuadmin
+Mon Jan 20 05:11:17 PM EST 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ ls -la outFile.txt 
+-rw-rw-r-- 1 admin admin 44 Jan 20 17:11 outFile.txt
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ ln -s outFile.txt linux_softLink
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ ln outFile.txt linux_hardLink
+
+We can see a Hard link changes the number as well (1 from above to 2):
+ubuntuadmin@Ubuntu-VM:~/userDir$ ls -la outFile.txt
+-rw-rw-r-- 2 ubuntuadmin ubuntuadmin 44 Jan 20 17:11 outFile.txt
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ ls -la l*
+-rw-rw-r-- 1 ubuntuadmin ubuntuadmin 108 Jan 20 17:14 linux_hardLink
+lrwxrwxrwx 1 ubuntuadmin ubuntuadmin  11 Jan 20 17:12 linux_softLink -> outFile.txt
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat outFile.txt 
+ubuntuadmin
+Tue Jan 14 04:20:25 PM EST 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_softLink 
+ubuntuadmin
+Tue Jan 14 04:20:25 PM EST 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_hardLink 
+ubuntuadmin
+Tue Jan 14 04:20:25 PM EST 2025
+
+Update one file others get updated, any changes we make in source file get replicated in the hard & soft links
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ date -u >> outFile.txt 
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_hardLink 
+ubuntuadmin
+Mon Jan 20 05:11:17 PM EST 2025
+Mon Jan 20 10:14:43 PM UTC 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat outFile.txt 
+ubuntuadmin
+Mon Jan 20 05:11:17 PM EST 2025
+Mon Jan 20 10:14:43 PM UTC 2025
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_softLink 
+ubuntuadmin
+Mon Jan 20 05:11:17 PM EST 2025
+Mon Jan 20 10:14:43 PM UTC 2025
+
+Removed original file:
+ubuntuadmin@Ubuntu-VM:~/userDir$ rm outFile.txt 
+
+Data retained in HardLink:
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_hardLink 
+ubuntuadmin
+Mon Jan 20 05:11:17 PM EST 2025
+Mon Jan 20 10:14:43 PM UTC 2025
+
+But linux_softLink is pointing to a file "outFile.txt" which does not even exist anymore that's why we get error
+
+ubuntuadmin@Ubuntu-VM:~/userDir$ cat linux_softLink 
+cat: linux_softLink: No such file or directory

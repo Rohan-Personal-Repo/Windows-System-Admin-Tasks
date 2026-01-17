@@ -1,0 +1,23 @@
+Get File Attribute Details - PowerShell:
+
+Populate File :
+PS C:\Admin> echo "Hello, World" >> .\info.txt
+PS C:\Admin> Get-Date >> .\info.txt
+
+PS C:\Admin> Get-ItemProperty -Path .\info.txt
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/17/2025  12:00 PM            128 info.txt
+
+Get and Set Attributes:
+PS C:\Admin> Get-ItemPropertyValue -Path .\info.txt -Name Attributes
+Archive
+
+Set ReadOnly Attribute :
+PS C:\Admin> Set-ItemProperty -Path .\info.txt -Name IsReadOnly $true
+
+PS C:\Admin> Get-ItemPropertyValue -Path .\info.txt -Name Attributes
+ReadOnly, Archive
+
+Get Attribute Values using Get-ItemProperty itself:
+PS C:\Admin> Get-ItemProperty -Path .\info.txt | Select-Object Attributes

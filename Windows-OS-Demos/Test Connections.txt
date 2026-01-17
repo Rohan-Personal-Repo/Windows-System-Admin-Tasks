@@ -1,0 +1,33 @@
+Ping same On Ubuntu & Windows:
+ping google.ca
+
+Trace-Route On Windows:
+tracert google.ca
+
+On Ubuntu:
+traceroute google.ca
+
+Testing Net Connection:
+
+On Windows:
+Test-NetConnection google.ca
+
+On Ubuntu:
+nc -z -v google.ca 443
+Connection to google.ca (142.251.41.35) 443 port [tcp/https] succeeded!
+
+nc -z -v google.ca 80
+Connection to google.ca (142.251.41.35) 80 port [tcp/http] succeeded!
+
+Client/Server Model Ubuntu Demo:
+On Terminal 1 : Start listening on Port 1234
+nc -l 1234
+
+On Terminal 2 : Connect to LocalHost at 1234 
+nc -N 127.0.0.1 1234
+
+To simulate a Chat App, we introduce a 10 second delay:
+nc -i 10 127.0.0.1 1234
+
+NSLookup same On Ubuntu & Windows:
+nslookup google.ca

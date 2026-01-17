@@ -1,0 +1,7 @@
+Check history on PowerShell and Linux Terminal:
+history
+
+Check history on Command Prompt:
+doskey /history
+
+Also Linux History is retained for a longer while PowerShell and CMD Prompt history vanishes when we close the respective application.

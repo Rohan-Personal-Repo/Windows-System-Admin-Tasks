@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Table Example </title>
+        <style>
+            body{
+                background-color: lightgray;
+                font-family: 'Comic Sans MS'
+            }
+            table{
+                text-align: center;
+                width: 720px;
+                border: 1px solid black;
+                background-color: lightslategray;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            .superHeroName{
+               background-color: lightyellow;
+            }
+            .realName{
+                background-color: lightblue;
+            }
+            .cityName{
+                background-color: bisque;
+            }
+            .studioName{
+                background-color: azure;
+            }
+            td, th {
+                padding: 5px;
+            }
+            tfoot{
+                border-top: 1px solid teal;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 align="center"> Information about Comic Book Superheroes </h3>
+
+        <table align="center">
+            <colgroup>
+                <col class="superHeroName">
+                <col class="realName">
+                <col class="cityName">
+                <col class="studioName">
+            </colgroup>
+            <caption> <b> Superhero Info </b> </caption>
+            <thead width="100">
+                <tr>
+                    <th> Superhero Name </th>
+                    <th> Real Name </th>
+                    <th> City Name </th>
+                    <th> Studio Name </th>
+                </tr>
+            </thead>
+            <tbody width="100">
+                <tr>
+                    <td> Arrow </td>
+                    <td> Olliver Queen </td>
+                    <td> Starling City </td>
+                    <td> DC Comics </td>
+                </tr>
+                <tr>
+                    <td> Batman </td>
+                    <td> Bruce Wayne </td>
+                    <td> Gotham City </td>
+                    <td> DC Comics </td>
+                </tr>
+                <tr>
+                    <td> Wonder Woman </td>
+                    <td> Diana </td>
+                    <td> Amazon </td>
+                    <td> DC Comics </td>
+                </tr>
+                <tr>
+                    <td> Superman </td>
+                    <td> Clark Kent </td>
+                    <td> Smallville </td>
+                    <td> DC Comics </td>
+                </tr>
+                <tr>
+                    <td> Iron Man </td>
+                    <td> Tony Stark </td>
+                    <td> Malibu </td>
+                    <td> Marvel Comics </td>
+                </tr>
+                <tr>
+                    <td> The Hulk </td>
+                    <td> Bruce Banner </td>
+                    <td> New York </td>
+                    <td> Marvel Comics </td>
+                </tr>
+                <tr>
+                    <td> Captain Marvel </td>
+                    <td> Clark Kent </td>
+                    <td> Boston </td>
+                    <td> Marvel Comics </td>
+                </tr>
+                <tr>
+                    <td> Black Panther </td>
+                    <td> T'Challa </td>
+                    <td> Wakanda </td>
+                    <td> Marvel Comics </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr> 
+                    <th>  &nbsp; </th>
+                    <th>  &nbsp; </th>
+                    <th>  &nbsp; </th>
+                    <th align="right">  &copy; 2023 XYZ Corporation </th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
