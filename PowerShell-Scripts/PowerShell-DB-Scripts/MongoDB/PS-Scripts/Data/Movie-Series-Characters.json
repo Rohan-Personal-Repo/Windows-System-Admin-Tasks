@@ -1,0 +1,162 @@
+[
+  {
+    "heroName": "Emily Vancamp",
+    "roles": [
+      {
+        "roleName": "Emily Thorne",
+        "seriesMovieTitle": "Revenge",
+        "Address": "Hamptons"
+      }
+    ]
+  },
+  {
+    "heroName": "Emma Watson",
+    "roles": [
+      {
+        "roleName": "Hermione Granger",
+        "seriesMovieTitle": "Harry Potter",
+        "Address": "Privet Drive"
+      }
+    ]
+  },
+  {
+    "heroName": "Freddie Highmore",
+    "roles": [
+      {
+        "roleName": "August",
+        "seriesMovieTitle": "August Rush",
+        "Address": "Boston"
+      }
+    ]
+  },
+  {
+    "heroName": "Ioan Gruffudd",
+    "roles": [
+      {
+        "roleName": "Dr. Henry Morgan",
+        "seriesMovieTitle": "Forever",
+        "Address": "Jersey"
+      }
+    ]
+  },
+  {
+    "heroName": "Kate Beckinsale",
+    "roles": [
+      {
+        "roleName": "Selene",
+        "seriesMovieTitle": "Underworld",
+        "Address": "Budapest"
+      },
+      {
+        "roleName": "Lori",
+        "seriesMovieTitle": "Total Recall",
+        "Address": "Calgary"
+      }
+    ]
+  },
+  {
+    "heroName": "Kelli Williams",
+    "roles": [
+      {
+        "roleName": "Gillian Foster",
+        "seriesMovieTitle": "Lie to me",
+        "Address": "Toronto"
+      }
+    ]
+  },
+  {
+    "heroName": "Kerry Washington",
+    "roles": [
+      {
+        "roleName": "Olivia Pope",
+        "seriesMovieTitle": "Scandal",
+        "Address": "Washington"
+      }
+    ]
+  },
+  {
+    "heroName": "Mandy Moore",
+    "roles": [
+      {
+        "roleName": "Jamie Sullivan",
+        "seriesMovieTitle": "A Walk to Remember",
+        "Address": "North Carolina"
+      }
+    ]
+  },
+  {
+    "heroName": "Matt Leblanc",
+    "roles": [
+      {
+        "roleName": "Joey Tribbiani",
+        "seriesMovieTitle": "Friends",
+        "Address": "Rome"
+      }
+    ]
+  },
+  {
+    "heroName": "Matthew Perry",
+    "roles": [
+      {
+        "roleName": "Chandler Bing",
+        "seriesMovieTitle": "Friends",
+        "Address": "New York"
+      },
+      {
+        "roleName": "Ron Clark",
+        "seriesMovieTitle": "The Ron Clark Story",
+        "Address": "Montreal"
+      }
+    ]
+  },
+  {
+    "heroName": "Paul Wesley",
+    "roles": [
+      {
+        "roleName": "Stefan Salvatore",
+        "seriesMovieTitle": "Vampire Diaries",
+        "Address": "Mystic Falls"
+      }
+    ]
+  },
+  {
+    "heroName": "Robert Downey Jr.",
+    "roles": [
+      {
+        "roleName": "Tony Stark",
+        "seriesMovieTitle": "Iron Man",
+        "Address": "Malibu"
+      }
+    ]
+  },
+  {
+    "heroName": "Stephen Amell",
+    "roles": [
+      {
+        "roleName": "Olliver Queen",
+        "seriesMovieTitle": "Arrow",
+        "Address": "Starling City"
+      }
+    ]
+  },
+  {
+    "heroName": "Tim Roth",
+    "roles": [
+      {
+        "roleName": "Cal Lightman",
+        "seriesMovieTitle": "Lie to me",
+        "Address": "Seattle"
+      }
+    ]
+  },
+  {
+    "heroName": "Tom Cruise",
+    "roles": [
+      {
+        "roleName": "Ethan Hunt",
+        "seriesMovieTitle": "Mission Impossible",
+        "Address": "London"
+      }
+    ]
+  }
+]

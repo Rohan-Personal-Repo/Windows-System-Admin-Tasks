@@ -1,0 +1,34 @@
+
+
+MongoDB Username and Password
+mongoDBUserName/mongoDBPassword
+
+Connection String:
+mongodb+srv://mongoDBUserName:mongoDBPassword@mongocluster.dev.mongodb.net/
+
+
+Install-Module -Name Mdbc -Scope CurrentUser
+
+Get-Module -ListAvailable mdbc
+
+# Installing an older version of Mdbc to ensure it runs well on PS 5.X
+PS C:\Users\Win> Install-Module -Name Mdbc -RequiredVersion 6.7.2 -Scope CurrentUser
+
+Untrusted repository
+You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from 'PSGallery'?
+
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+
+PS C:\Users\Win> help about_Mdbc
+TOPIC
+about_Mdbc
+SHORT DESCRIPTION
+MongoDB cmdlets based on the official C# driver. ...
+
+Access to multiple methods:
+Add-MdbcData
+Get-MdbcData
+Set-MdbcData
+Remove-MdbcData
+Update-MdbcData
+Use-MdbcTransaction

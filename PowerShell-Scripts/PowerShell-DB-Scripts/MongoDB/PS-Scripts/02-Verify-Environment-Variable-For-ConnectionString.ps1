@@ -1,0 +1,2 @@
+# After running this Script close the PowerShell Window and reopen it again and confirm if the Connection String was stored by running
+Write-Host "Connection String : " $env:MONGO_CONN_STRING -ForegroundColor Cyan -BackgroundColor Black

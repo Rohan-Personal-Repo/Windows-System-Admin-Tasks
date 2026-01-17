@@ -1,0 +1,136 @@
+﻿[
+    {
+        "actorName":  "Tim Roth",
+        "roles":  {
+                      "heroName":  "Cal Lightman",
+                      "seriesMovieTitle":  "Lie to me",
+                      "location":  "Seattle"
+                  }
+    },
+    {
+        "actorName":  "Emily Vancamp",
+        "roles":  {
+                      "heroName":  "Emily Thorne",
+                      "seriesMovieTitle":  "Revenge",
+                      "location":  "Hamptons"
+                  }
+    },
+    {
+        "actorName":  "Stephen Amell",
+        "roles":  {
+                      "heroName":  "Olliver Queen",
+                      "seriesMovieTitle":  "Arrow",
+                      "location":  "Starling City"
+                  }
+    },
+    {
+        "actorName":  "Paul Wesley",
+        "roles":  {
+                      "heroName":  "Stefan Salvatore",
+                      "seriesMovieTitle":  "Vampire Diaries",
+                      "location":  "Mystic Falls"
+                  }
+    },
+    {
+        "actorName":  "Robert Downey Jr.",
+        "roles":  {
+                      "heroName":  "Tony Stark",
+                      "seriesMovieTitle":  "Iron Man",
+                      "location":  "Malibu"
+                  }
+    },
+    {
+        "actorName":  "Ioan Gruffudd",
+        "roles":  {
+                      "heroName":  "Dr. Henry Morgan",
+                      "seriesMovieTitle":  "Forever",
+                      "location":  "Jersey"
+                  }
+    },
+    {
+        "actorName":  "Matthew Perry",
+        "roles":  [
+                      {
+                          "heroName":  "Chandler Bing",
+                          "seriesMovieTitle":  "Friends",
+                          "location":  "New York"
+                      },
+                      {
+                          "heroName":  "Ron Clark",
+                          "seriesMovieTitle":  "The Ron Clark Story",
+                          "location":  "Montreal"
+                      }
+                  ]
+    },
+    {
+        "actorName":  "Emma Watson",
+        "roles":  {
+                      "heroName":  "Hermione Granger",
+                      "seriesMovieTitle":  "Harry Potter",
+                      "location":  "Privet Drive"
+                  }
+    },
+    {
+        "actorName":  "Kerry Washington",
+        "roles":  {
+                      "heroName":  "Olivia Pope",
+                      "seriesMovieTitle":  "Scandal",
+                      "location":  "Washington"
+                  }
+    },
+    {
+        "actorName":  "Tom Cruise",
+        "roles":  {
+                      "heroName":  "Ethan Hunt",
+                      "seriesMovieTitle":  "Mission Impossible",
+                      "location":  "London"
+                  }
+    },
+    {
+        "actorName":  "Freddie Highmore",
+        "roles":  {
+                      "heroName":  "August",
+                      "seriesMovieTitle":  "August Rush",
+                      "location":  "Boston"
+                  }
+    },
+    {
+        "actorName":  "Mandy Moore",
+        "roles":  {
+                      "heroName":  "Jamie Sullivan",
+                      "seriesMovieTitle":  "A Walk to Remember",
+                      "location":  "North Carolina"
+                  }
+    },
+    {
+        "actorName":  "Kate Beckinsale",
+        "roles":  [
+                      {
+                          "heroName":  "Selene",
+                          "seriesMovieTitle":  "Underworld",
+                          "location":  "Budapest"
+                      },
+                      {
+                          "heroName":  "Lori",
+                          "seriesMovieTitle":  "Total Recall",
+                          "location":  "Calgary"
+                      }
+                  ]
+    },
+    {
+        "actorName":  "Matt Leblanc",
+        "roles":  {
+                      "heroName":  "Joey Tribbiani",
+                      "seriesMovieTitle":  "Friends",
+                      "location":  "Rome"
+                  }
+    },
+    {
+        "actorName":  "Kelli Williams",
+        "roles":  {
+                      "heroName":  "Gillian Foster",
+                      "seriesMovieTitle":  "Lie to me",
+                      "location":  "Toronto"
+                  }
+    }
+]

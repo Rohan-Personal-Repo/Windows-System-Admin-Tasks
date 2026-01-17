@@ -1,0 +1,33 @@
+-- DROP DB if Exists
+DROP DATABASE IF EXISTS ADUserDB;
+
+-- Create our DB
+CREATE DATABASE ADUserDB;
+
+Use ADUserDB;
+
+-- Create a SQL Server Auth User
+CREATE LOGIN SQLAdmin WITH PASSWORD = 'SQLAdmin';
+
+CREATE USER SQLAdmin FOR LOGIN SQLAdmin;
+
+-- Set Default DB for User
+ALTER LOGIN SQLAdmin WITH DEFAULT_DATABASE = ADUserDB;
+
+-- Add the Server Roles
+ALTER ROLE [public] ADD MEMBER SQLAdmin;
+
+ALTER ROLE [dbcreator] ADD MEMBER SQLAdmin;
+
+-- Add User Mapping
+-- GRANT CREATE, ALTER, CHECKPOINT priviledges
+ALTER ROLE db_ddladmin ADD MEMBER SQLAdmin;
+
+-- GRANT SELECT 
+ALTER ROLE db_datareader ADD MEMBER SQLAdmin;
+-- GRANT INSERT, UPDATE, DELETE
+ALTER ROLE db_datawriter ADD MEMBER SQLAdmin;
+
+-- Allow SQL Connection
+ALTER LOGIN SQLAdmin ENABLE;
+GRANT CONNECT SQL TO SQLAdmin;
