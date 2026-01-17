@@ -1,0 +1,82 @@
+Windows Server 2022 Hardening Checklist
+
+This is a manual checklist (not a script).
+Perfect for interviews, cyber labs, and real environments.
+
+🔐 Security Baseline
+
+Enable Windows Firewall on all profiles
+
+Enforce strong password policy
+
+Disable Guest account
+
+Disable LAN Manager Authentication (NTLMv1)
+
+Disable SMBv1
+
+Enable Defender Real-Time Monitoring
+
+Apply latest Windows Updates
+
+🧱 Account Hardening
+
+Rename Administrator account
+
+Create separate Admin + Standard accounts
+
+Enforce account lockout policy
+
+Enable auditing (logon, access, changes)
+
+🗄️ Network Hardening
+
+Disable unused NICs
+
+Disable IPv6 if not used
+
+Disable LLDP / LLMNR if not needed
+
+Disable Wi-Fi on server-class systems
+
+🧰 Service Hardening
+
+Disable these unless required:
+
+Fax
+
+Print Spooler
+
+Remote Registry
+
+Secondary Logon
+
+Bluetooth Support
+
+Windows Search
+
+📦 Role/Feature Reduction
+
+Uninstall unused roles:
+
+Telnet
+
+TFTP
+
+Media Player
+
+XPS Viewer
+
+SMB1
+
+📁 File System Hardening
+
+Enable BitLocker (if supported)
+
+Enable Audit Object Access
+
+Use NTFS permissions (not share-only access)
+
+🧩 Optional: Use Microsoft Security Baseline
+
+From Microsoft Security Compliance Toolkit.

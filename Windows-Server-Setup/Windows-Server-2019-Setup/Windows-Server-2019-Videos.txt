@@ -1,0 +1,46 @@
+Win2K19 ISO Link - https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019
+
+Issue with ISO in VMWare:
+https://medium.com/certifried-it/how-to-install-windows-server-2019-in-a-vm-with-vmware-b20b80a8bcd5
+
+Install Notepad++
+
+1. Basic Config - https://www.youtube.com/watch?v=1nxYJSV7-u8&list=PLUZTRmXEpBy32NP6z_qvVBOTWUzdTZVHt&index=3
+
+ADDS Setup Use Root domain as : easysystems.in
+2. Setup ADDS - https://www.youtube.com/watch?v=h3sxduUt5a8&list=PLUZTRmXEpBy32NP6z_qvVBOTWUzdTZVHt&index=4
+
+3. Setup DNS - https://www.youtube.com/watch?v=-TsqAHUWdQU
+
+4. Create OU, Users and Groups - https://www.youtube.com/watch?v=cETbT22TWEE&list=PLUZTRmXEpBy32NP6z_qvVBOTWUzdTZVHt&index=8
+
+5. Setup IIS #1 - https://www.youtube.com/watch?v=eeBm2H1Yuok
+
+5. Setup IIS #2 - https://www.youtube.com/watch?v=h3NkB0Sxvjo
+
+5. IIS Tutorial - https://www.youtube.com/watch?v=1VdxPWwtISA
+
+6. Deploy Desktop Background Wallpaper using Group Policy:
+https://www.youtube.com/watch?v=XtpJCM6jgso&list=PLUZTRmXEpBy32NP6z_qvVBOTWUzdTZVHt&index=17
+
+7. Setup FTP Server on Windows Server 2019:
+	https://www.youtube.com/watch?v=MljiL5LtjWc
+
+8. Setup FTP Server on Windows Server 2019 with user isolation:
+	https://www.youtube.com/watch?v=bUG_oysxXZo
+
+Install Filezilla after FTP Installation
+	
+9. Setup DHCP - 
+https://www.youtube.com/watch?v=fUK6d3s1Im4&list=PLUZTRmXEpBy32NP6z_qvVBOTWUzdTZVHt&index=7
+
+Extra:
+Learn DNS - https://www.youtube.com/watch?v=0VD3IFRW2cs
+
+
+
+How to Add a Child Domain to an Existing Forest : https://www.youtube.com/watch?v=1vWSKLX0Xrk&list=PLUZTRmXEpBy2QDBF2cssNtYhVqcDgiRnE&index=6
+
+Adding Additional Domain Controller to an Existing Domain:
+easysystems.ca
+https://www.youtube.com/watch?v=sqHa2gN1HsY&list=PLUZTRmXEpBy2QDBF2cssNtYhVqcDgiRnE&index=1

@@ -1,0 +1,23 @@
+Win22 ISO Link - https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
+
+VMWare Workstation Pro - https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&freeDownloads=true
+
+0. Install VMWare and Server 2022 - https://www.youtube.com/watch?v=GsmJowwIh8Q
+
+1. Basic Config - https://www.youtube.com/watch?v=fYlVQxnTyvs&list=PLUZTRmXEpBy1AdznospPeOSyoYBMQLh2r&index=5
+
+ADDS Setup Use Root domain as : easysystems.in
+2. Setup ADDS & DNS - https://www.youtube.com/watch?v=FDhndiAEyxs&list=PLUZTRmXEpBy1AdznospPeOSyoYBMQLh2r&index=6
+
+3. Setup FTP - https://www.youtube.com/watch?v=pbEQ-iw5Clk&list=PLUZTRmXEpBy1AdznospPeOSyoYBMQLh2r&index=132
+
+4. Setup IIS - https://www.youtube.com/watch?v=J8lbbohabb8
+
+5. Desktop Background, Password Policy GPO  - https://www.youtube.com/watch?v=6F7-tV4lYFw&list=PLAdEnQWAAbfXMY2D4HVZOe-ChfTKmaJfQ&index=5
+
+6. Account Lockout, Password Policy GPO - https://www.youtube.com/watch?v=mJJzjogoI18&list=PLAdEnQWAAbfXMY2D4HVZOe-ChfTKmaJfQ&index=2
+
+7. Display Machine GPO Based on three Videos:
+	Vid #1 - Creating the Windows Form Screen - https://www.youtube.com/watch?v=X6nU5QCF8XI
+	Vid #2 - Creating the Windows Form Screen with Button - https://www.youtube.com/watch?v=IvMDWMvQoas
+	Vid #3 - Hide the Shutdown and Restart GPO - https://www.youtube.com/watch?v=0vv2FkEB6g4&list=PLUZTRmXEpBy1AdznospPeOSyoYBMQLh2r&index=55
