@@ -1,0 +1,201 @@
+ID,Name,Age,Gender,Projects Completed,Productivity (%),Satisfaction Rate (%),Feedback Score,Department,Position,Joining Date,Salary
+4c01d523-d718-4489-a434-06562e2368df,Michael Riley,22,Female,3,80,27,3.1,HR,Intern,2020,37353
+e619f654-5c18-404e-b0cb-e1f46cdafeb0,Daniel Pierce,22,Male,3,36,77,1.6,Finance,Intern,2021,32992
+cb7e9705-4b45-417d-8f6f-13e64f192c56,Allison Smith,22,Male,0,23,60,2.4,HR,Intern,2022,31230
+b8d4510a-0680-41fb-94ea-0a0644b40fe6,Carrie Lowe DVM,23,Female,5,9,50,3.5,HR,Intern,2020,39138
+12691594-02f1-4991-8902-420295d3dc6f,Shannon Allen,23,Female,4,92,68,2.8,HR,Intern,2021,39670
+67c3824c-ba67-41d2-893b-17322f4115a9,Melissa Nguyen,23,Female,8,23,62,2,Sales,Junior Developer,2021,59877
+9e8c5d85-d1cd-4846-be54-ae4d4b7e86c8,Matthew Moran,23,Female,9,59,11,4.9,Marketing,Junior Developer,2021,55833
+bc798a0d-add5-411b-83bd-e45116a0ef46,Sherry Werner,23,Female,5,27,65,4.6,Sales,Intern,2021,35192
+d23d9960-ec30-48fa-bce9-9475bfac95df,John Elliott,23,Female,1,51,93,2.5,Sales,Intern,2022,31456
+05ec0eba-8bd9-490e-966e-a81a5d7dd126,Daniel Lopez,23,Male,5,77,6,4,Sales,Junior Developer,2018,47294
+a248eecc-d827-4791-ae70-c199016f5759,Kristine Smith,23,Male,3,26,85,2.7,IT,Intern,2020,33105
+6746657f-5e53-4c5d-84be-9efaaf7c6647,Susan Hill,23,Male,2,0,90,2.7,Marketing,Intern,2020,35130
+b8734d79-a6e3-4f1d-8d06-d58822207582,Michael Morton DDS,23,Male,2,1,17,4.4,Sales,Intern,2021,37855
+f63663cf-b193-4bcc-a249-e00e70259052,Mrs. Heidi Villa,23,Male,1,11,7,1.6,Marketing,Intern,2022,34697
+71432ed7-4dcb-43c6-b237-7dc5386c5a28,Brett Butler,24,Female,10,26,86,1.1,Finance,Junior Developer,2020,58688
+d9e738f3-eee7-4edc-898e-a55c8e99a3ee,Maria Short,24,Female,4,20,56,2.1,Sales,Intern,2021,35636
+477314f0-146d-40c1-8ea5-d5ef904bd10f,Cindy West,24,Male,10,69,62,2.6,Finance,Junior Developer,2019,50124
+d8aa0ac1-9984-4507-9141-090925de4bbb,Susan Foley,24,Male,0,70,0,3.3,Finance,Intern,2020,33770
+0fe4b4e2-e6f4-4972-bef9-952ddfc59203,Jonathan King,24,Male,5,63,33,4.2,Sales,Junior Developer,2021,48740
+0e50682c-5c04-4890-8290-96b9934b5988,Danielle Rodriguez,24,Male,3,93,82,4.3,Sales,Intern,2021,35375
+eb08a64a-20bf-4712-9457-79b66bc17fae,Justin Williams,25,Female,4,48,49,3.4,Sales,Junior Developer,2018,54193
+fada431d-170a-4a2e-a731-a75cd35b6cdc,Kim Larson,25,Female,3,15,99,2.8,Marketing,Junior Developer,2019,47322
+ce9f913a-62d1-4a5b-8152-442ea61a1c97,Donald Davis,25,Female,2,15,97,1.8,HR,Intern,2021,35169
+53976a16-f3ec-402e-b110-777d116a7b01,Stephanie Rivera,25,Female,3,76,26,1.2,Marketing,Junior Developer,2021,56946
+d30740ee-adc4-4c17-9035-69584db447bb,Douglas Sweeney,25,Female,6,74,83,4.2,IT,Junior Developer,2021,58237
+2efe2ade-ce5e-485b-ba99-f4a280e73406,Dana Taylor,25,Female,2,16,95,4,Sales,Intern,2022,36842
+31f8cf88-083b-4fdb-912f-45ed0d0dcd98,Alexandra Wilson,25,Male,11,23,15,4,Finance,Analyst,2016,64328
+4ca89792-30d6-427e-89fa-fc0120989124,Mallory Lawrence,25,Male,5,61,48,1.7,Finance,Analyst,2016,65633
+83c89daf-0c2b-4d1a-9157-c5971c6eff98,Jamie Wells,25,Male,5,90,75,1.5,Sales,Junior Developer,2018,51123
+a3044269-d06d-4f21-bb9a-1a1b3a9026e9,Michelle Moreno,25,Male,10,29,73,2,Finance,Junior Developer,2019,52122
+b04f6982-e438-4652-8c3c-242a107884ab,Marilyn Williams,25,Male,8,70,53,2.8,Sales,Junior Developer,2019,54047
+cd8a8009-51e8-4bdc-8178-75d359834d31,Thomas Baxter,25,Male,9,65,79,1.5,Finance,Junior Developer,2019,49120
+4aeb69b1-e4d8-465e-83a4-13fa8ef681f8,Kara Garcia,25,Male,6,2,43,3.9,Finance,Analyst,2019,71604
+3e7bcd12-f5af-48c9-85df-a2054655057f,Douglas Lindsey,25,Male,11,57,25,4.7,Marketing,Analyst,2020,63596
+b9f834ab-e0b1-4acb-9032-12dfb916d16b,Jennifer Gilbert,25,Male,1,7,42,2.4,Sales,Intern,2021,34535
+67756234-d822-4301-8b20-abd588522ba4,Timothy Avery,25,Male,4,31,90,2.8,IT,Intern,2021,32010
+9d7497bb-66a6-44cb-ba34-1f22432296b0,Mrs. Laura Gonzalez,25,Male,4,86,94,2.9,Marketing,Intern,2021,34601
+8e55ca96-5186-4494-9862-1126dd3e4293,Shannon Wilson,26,Female,4,46,66,2.4,Sales,Junior Developer,2018,50233
+fb987f86-1a75-4d3d-897d-d7d8831ac79c,Amanda Brown,26,Female,7,86,51,4.2,IT,Junior Developer,2018,47188
+2df3a09c-255a-4bdf-930c-f926159da1cd,Bradley Paul,26,Female,5,30,3,1.5,HR,Junior Developer,2019,46707
+e60ec82a-b777-4257-b1c3-8dc46fa68dcd,Daniel Young,26,Female,1,53,14,3.2,Sales,Intern,2020,32903
+dc1835ae-086e-4560-81d2-2101bfe9197f,Steven Anderson,26,Female,3,0,35,1.3,Marketing,Intern,2021,30509
+31c07aaa-d0c6-4174-a916-027becad452a,Joshua Lewis,26,Female,1,53,4,1.4,Marketing,Intern,2022,38303
+6d78b8cc-f24c-4529-a7be-170b315213fe,Michael Rodriguez,26,Female,5,11,67,3.6,HR,Intern,2022,30231
+f6e4b5bd-2387-48bf-8b29-42eac370dfa9,Denise Singleton,26,Female,5,53,56,3.9,HR,Intern,2022,38714
+8bff8cbd-353e-40fc-a9a7-23529cccbc8b,Jenny Riley,26,Female,5,80,45,1.7,Finance,Intern,2022,34076
+1fbd8392-6b31-42e3-9c40-d9d16b9be699,Michael Baker,26,Female,2,95,54,3.4,IT,Intern,2022,31328
+4084a930-dd0d-4e65-aa99-4a2925683a5a,Bethany Castro,26,Male,2,89,78,3.6,HR,Intern,2020,34412
+829efc4d-516a-44dc-aead-1cd41de63813,Emily Palmer,26,Male,10,95,100,1.5,IT,Junior Developer,2021,59502
+4f13143b-1161-4771-8899-213ce7334dee,Jeremy Miller,26,Male,7,45,28,2.8,IT,Junior Developer,2021,46612
+84f1b348-def0-47f4-a82b-5bc4cf261eb1,Brian Anderson,26,Male,2,42,45,2.1,Sales,Intern,2022,38878
+c65dfdd1-d3b0-444e-a5d1-b58932cd8b78,Nicholas Johnson,26,Male,1,13,16,4.8,Marketing,Intern,2022,31878
+210bfc62-58be-490b-bd53-37d910d5caef,Michael Perez,26,Male,5,57,49,4.1,IT,Intern,2022,37357
+59e12816-68d3-4210-8a77-4a1e60906a55,Patricia Campos,27,Female,3,18,89,2.6,HR,Junior Developer,2018,54974
+b56eb3c1-bc31-47aa-ab11-ddd9050c9fe9,Samantha Allen,27,Female,10,88,49,3.4,Marketing,Junior Developer,2019,53400
+b682e0af-ff56-4fbd-ae04-1b4afc459661,Chad Zamora,27,Female,10,9,80,3.8,Finance,Junior Developer,2020,51316
+3bc4c773-7bf5-438a-87ae-1995db13aa81,Jackie Holden,27,Female,5,1,42,4.6,Finance,Junior Developer,2020,46364
+300af108-4c9a-42f1-9fb4-0cf07190fc0e,Kimberly Cooper,27,Female,9,26,13,1.3,Finance,Junior Developer,2021,46910
+dcf2c460-111a-4a9b-bfe4-3ea92e4e2a34,Scott Johnson,27,Male,4,79,78,1.2,IT,Junior Developer,2018,59268
+1c247bf7-2ce1-4bd5-bd07-42274df4c74e,Sarah Levy,27,Male,5,38,79,2.3,HR,Analyst,2020,71365
+c7b548f5-89ce-441c-bdbb-fd401c905bb5,Russell Newton,27,Male,3,85,5,4.4,IT,Junior Developer,2020,51135
+9c220b79-0d61-4537-80a1-11bdda13f658,Molly Jones,28,Female,17,16,5,4.2,Marketing,Senior Developer,2007,83554
+d17a997e-e941-44c0-b503-719eb292ff8b,William Thomas,28,Female,9,19,80,2.5,IT,Senior Developer,2014,84252
+4c9b0a95-e04d-4e5c-a4dc-144b1fa5025b,Dr. Shane Lewis,28,Female,18,34,5,2.3,Sales,Senior Developer,2015,86941
+8b28eccd-72ee-4d15-a96d-6719a781141a,Alicia Butler,28,Female,10,77,44,2,Finance,Analyst,2017,63299
+92b39237-01e4-4c7d-9f09-346b49ce4219,Leslie Wallace,28,Female,10,60,83,3.9,HR,Analyst,2018,66367
+ec213426-2793-4690-af98-127a607b8614,Joshua Chen,28,Female,8,67,37,1.7,IT,Junior Developer,2019,56570
+d2f9ee84-a04e-4d48-a3c0-b4513c1ccea4,Dr. Corey Orr,28,Female,5,13,40,4.1,IT,Analyst,2020,70439
+bf0bb9e1-4174-4fb1-b717-85d1e4a2515f,Joshua White,28,Female,13,0,29,1.9,HR,Analyst,2020,70460
+5507e514-8f50-413a-8d28-b6cb2bb1351a,Jeffery Fields,28,Male,8,35,26,2.9,Sales,Analyst,2018,62727
+906375af-b29f-48a2-a620-0566129ffe5e,Steven Schroeder,28,Male,15,16,10,2,IT,Analyst,2019,68523
+4761fd6d-d4f5-447e-840e-e6f3b2394cf1,Walter Barker,28,Male,5,14,15,1.2,HR,Analyst,2020,61891
+d6286477-dcac-4961-b56a-acd41b09b54a,Yvette Hughes,29,Female,9,96,85,3.1,Sales,Analyst,2017,72877
+7a857a61-194d-4ae3-8f12-09a51f080e29,Stephanie Fisher,29,Female,9,32,87,3.5,HR,Junior Developer,2019,50051
+94a294e3-a981-4f6e-bc24-a476059e8ee4,Angela Davis,29,Male,18,88,8,1.8,Sales,Senior Developer,2018,89571
+8340a5e4-0cf7-45f4-bd54-738837f447e5,Michelle Perez,29,Male,5,93,94,4.9,Marketing,Junior Developer,2018,57478
+8fc7c561-33ef-448d-a8cb-f08d6e1e2e3d,Melissa Dunn,29,Male,9,37,50,3.7,Finance,Senior Developer,2018,94110
+d8059951-2a39-40da-92ce-9e1b2c5648be,Ashley Bradshaw,29,Male,6,9,46,1.7,Finance,Analyst,2018,71589
+897a8d40-1f16-452c-9cd1-8f6f48273d8a,Cheryl Spencer,29,Male,7,38,29,1.3,Finance,Analyst,2018,62588
+5d5b3b1b-17d7-480f-8b9c-b3a3dce25608,Jonathan Stanley,29,Male,5,44,51,3,Finance,Junior Developer,2019,49778
+bd28981b-5940-4a96-bd2d-c48bb9d2852d,Andrew Johnson,29,Male,5,43,49,3.6,Finance,Analyst,2019,69725
+03ff91a3-44e2-4a54-a477-ee3c20825d91,Elizabeth Williams,29,Male,9,38,52,2.3,Sales,Analyst,2020,73916
+7f871c89-73fd-477e-832c-50e5b584aafb,Samantha Baldwin,29,Male,6,26,18,2.8,Marketing,Junior Developer,2021,56573
+a73f1b0a-7d7e-4553-b84a-c4e5a1a0242a,Paula Gamble,30,Female,9,53,67,3.6,Marketing,Senior Developer,2011,82101
+cfabbef3-329a-49db-bf34-8409d7d0bd56,Colleen Jacobson,30,Female,9,94,81,1.5,IT,Analyst,2018,63299
+68359639-1027-4e6a-bc28-29349c847264,Daryl Noble,30,Female,7,32,43,2.3,Marketing,Junior Developer,2019,49323
+83d6df34-e0fb-4590-8976-6f1fd7941ea6,Cesar Davis,30,Female,9,96,81,3.5,Marketing,Junior Developer,2021,45375
+fe1525dc-5d6e-4e2e-9706-a716f2aabbe9,Rachel Harris,30,Male,8,75,88,1.9,IT,Senior Developer,2003,88117
+2e53359a-7eb6-49e5-a866-3acb42dc07b7,Victoria Townsend,30,Male,13,81,27,3.4,HR,Senior Developer,2004,80228
+f9d9ef22-9869-4584-94dd-d2dfea0833cb,Christy Snyder,30,Male,19,45,96,4.1,Finance,Team Lead,2005,101420
+eef41f83-08ff-4257-9eee-3bb02f0e08b8,Thomas Miller,30,Male,8,87,10,2.4,IT,Analyst,2017,66292
+82c5ccc1-182c-4dcc-adc9-8c1e67082c65,Tracy Morris,30,Male,10,10,73,4.1,Marketing,Junior Developer,2018,53966
+9934fef0-cec1-45f4-a5b0-cb7ea861026c,Brian Thomas,30,Male,9,53,53,1.4,Finance,Analyst,2019,70818
+2ba7d309-877a-44b9-a029-f9ea7a016bf5,Brandon Vega,30,Male,6,39,7,2,Sales,Junior Developer,2020,47255
+eb7a0d3e-b23d-430e-b98c-ba31b18edd08,Jasmine Payne,31,Female,16,81,46,3.9,Finance,Team Lead,2010,104318
+1d334c10-04ee-4240-84bb-22c6d2924253,Mary Singh,31,Female,11,57,38,1.3,Marketing,Senior Developer,2010,81248
+980b9a04-48e3-49c5-877c-dccc655163b1,Mr. Brandon Weber,31,Female,6,37,90,1.9,IT,Analyst,2017,60575
+bdc50360-531c-4ebf-a284-f4149ac2192a,James Berg,31,Female,14,33,59,4.5,Marketing,Analyst,2019,70095
+11f2537c-75a0-4c22-bbad-0e49ad61cab4,William Taylor,31,Male,9,80,13,1.9,Sales,Analyst,2018,67630
+9273f89c-ef17-4e69-91f1-5f6e41f4bfee,Gregory Wong,32,Female,16,40,6,4.4,Marketing,Team Lead,2007,92217
+6cb02b56-1f97-4edf-96d9-e22ff97e4ac9,Ms. Emily Dawson,32,Female,14,45,20,3.1,Marketing,Analyst,2018,70271
+0c8b6acb-abde-433c-8d65-117ccdf26c23,James Lee,33,Female,15,89,62,4.3,HR,Senior Developer,2015,85674
+32905645-31eb-4b15-a703-4b7682558e6a,Kyle Figueroa,33,Female,13,41,39,2.3,Sales,Analyst,2018,73502
+aae6fdb8-3759-41a5-b564-578ae7a3bf56,Alyssa Montoya,33,Female,14,55,26,4.8,Sales,Analyst,2018,73623
+aba05e36-0fb3-48ed-a246-b27f9716e50d,Elizabeth Bowen,33,Female,7,16,17,4.7,Sales,Analyst,2019,73157
+d63ef822-484c-492f-980e-91f9d5e57609,Stephen Watson,33,Male,17,84,69,1.2,Sales,Senior Developer,2007,90885
+de6bb8b7-916e-4164-82b4-542d09ccb403,Samantha Williams,33,Male,14,88,47,2.7,IT,Senior Developer,2011,87041
+56f3fa2b-0e73-4e80-bb4b-b909ae1cf736,Geoffrey Kelley,33,Male,15,19,54,3.8,Finance,Analyst,2016,69087
+0c0b3901-8b47-4191-9265-3999be378084,Dennis Nash,34,Female,13,37,37,1.4,Sales,Team Lead,2006,93896
+654a2c62-264b-4035-8f14-0fd05e54955b,Dawn Martin,34,Female,17,14,23,2.3,Marketing,Senior Developer,2007,91663
+651e70ea-edfd-49a2-8228-7ce4928e84c2,Amy Garcia,34,Male,10,31,27,3.6,Marketing,Analyst,2017,69347
+6026f1ef-d349-4353-a638-919f3f1fe60b,Robin Hurst,34,Male,9,47,56,4.1,Marketing,Analyst,2019,71558
+040fd31a-8473-403b-99b6-23c8d2f9423f,Autumn Taylor,34,Male,11,97,32,1,Marketing,Analyst,2019,74918
+ab23601e-33c1-4bc1-9537-f513f718f027,Cristina Garcia,35,Female,15,37,22,1.2,IT,Manager,2008,100269
+91d2e600-a804-4d13-beb5-c6ce18df1eb2,Lori Garcia,35,Male,16,10,64,1.5,Finance,Manager,1999,100719
+beda880f-9fd4-4dde-bd73-e10b10d66479,Michael Oneal,35,Male,25,69,58,4.9,IT,Manager,2001,116928
+8c170542-5967-45e2-91af-c97d6ba6b8fb,Carrie Smith,35,Male,19,15,34,1.6,Sales,Team Lead,2008,94026
+542e538e-4da1-4748-8dd4-94d6c2eb6019,Susan Johnson,35,Male,17,26,81,3.9,Finance,Manager,2011,119895
+cf65d81c-c570-4ee5-9316-bd4a84fcf830,Joseph Friedman,35,Male,18,90,0,3.7,Finance,Team Lead,2013,105640
+9ea2d8de-02a7-45c1-afb5-b72576097230,Shannon Ingram,35,Male,7,56,8,1.3,Sales,Analyst,2019,60501
+c23ffdf7-c810-45aa-987d-44e80c916ef9,James Reese,35,Male,15,59,10,2.4,Marketing,Analyst,2020,64858
+1238f210-9076-4d62-8551-12fa019423bb,Michael Hernandez,36,Female,23,96,50,3.4,Marketing,Manager,2005,104216
+dba17891-7be8-45ad-9bbc-53bcda6b5d5e,Tyrone Underwood,36,Female,12,0,20,2,Marketing,Team Lead,2009,107062
+1a033274-d7a0-4eaa-a776-250f3707c8d7,Brittany Jackson,36,Female,13,31,36,3.3,Marketing,Team Lead,2014,96579
+17154eaa-c420-48b8-8266-66a6bdf59803,Manuel Sanchez,36,Female,12,50,0,4.2,HR,Team Lead,2017,97569
+9517c0f3-8f81-449e-ad46-79db8b865d91,Patricia Collins,36,Male,10,61,95,1.1,HR,Senior Developer,2004,80513
+44890a53-396e-4a1e-b8f4-e79eb9b0143c,Amanda White,36,Male,12,22,66,2.2,IT,Team Lead,2005,107279
+49ad3dca-a356-41e4-a06e-6ba53a298c5b,John Moore,36,Male,20,96,45,3.9,IT,Team Lead,2005,107062
+5cc8f1ea-fa76-4b7d-b42c-59f68cfd413f,Eric Sanders,36,Male,11,45,67,1.2,Finance,Senior Developer,2013,80721
+06db7427-34d9-4773-a847-9533068a2788,Jordan Morales,36,Male,16,28,63,3.1,Marketing,Senior Developer,2017,92954
+4f58d21a-3486-40ad-adab-00aff31ff85d,Jeffrey Hodges,38,Female,10,47,55,3.9,Sales,Senior Developer,2017,93569
+91b2e87c-8148-41df-8650-e0e4fce4bba4,Harold Nguyen,38,Male,22,37,95,2.2,Finance,Manager,2010,116888
+394db428-17a0-45b4-b04c-64169e7064be,Tracy Figueroa,39,Female,17,10,15,1.1,HR,Team Lead,2004,92915
+e6b1ecc1-068f-43c3-98d7-a2c7ad09962c,Karen Harmon,39,Female,15,18,20,2.7,Sales,Team Lead,2005,98912
+1a45840b-1b74-4098-b7fc-246d73513420,Mary Barber,39,Female,24,81,18,4.1,Finance,Manager,2016,108820
+d2f07473-1c5a-421a-845c-06d32db722da,Drew Rojas,39,Female,16,13,100,4.7,IT,Manager,2016,107814
+08d77fad-8455-4d25-9d4c-32a4d0cad48c,Ryan Avila,39,Male,18,98,98,2.4,Sales,Senior Developer,2003,80793
+7651a723-40e3-4001-b813-3db53329fad2,Vincent Jones,39,Male,12,29,58,2.6,IT,Senior Developer,2003,84152
+f8f75148-c5c1-4ec8-a980-533d4bacb7eb,Gail Taylor,39,Male,9,53,34,1.1,HR,Senior Developer,2006,86537
+24f6274f-2bfe-47b6-a8eb-123ecd950c72,Kelly Bryant,40,Female,18,14,36,2.7,Marketing,Manager,2005,109418
+47c74b6a-54b3-4753-988a-ab03bea11318,Cynthia Ochoa,40,Female,16,3,71,2.3,HR,Senior Developer,2018,90439
+24e92aae-9afa-41ad-9e0b-546f74558d33,William Reed,40,Male,22,90,66,2.1,IT,Manager,2009,101837
+ccb61fdf-c211-4b17-af4f-061e94505036,Tracy Briggs,40,Male,22,18,68,4.7,IT,Manager,2012,100795
+54becc52-948e-4bc4-bc58-0ef12eeb02b4,Melissa Galvan,40,Male,17,3,53,1.8,Sales,Manager,2013,118466
+5bb2e25f-9bc9-48c3-acc9-f4e1f5bb525e,Robert Ward,40,Male,10,56,55,2.4,HR,Senior Developer,2018,94290
+a8748d02-3553-44ed-aa79-4b7716bda969,Jill Anderson,41,Female,8,71,56,4.4,IT,Senior Developer,2005,84510
+5c4220df-97ee-431e-9495-4542f84dd631,James Hernandez,41,Female,13,44,36,3.9,Marketing,Team Lead,2011,92074
+7f322e47-df4d-40f3-a63c-5452cab79927,Alejandro Rice,41,Female,16,48,38,3.9,Sales,Senior Developer,2015,81627
+270663c2-1fff-4f1f-85e8-727978e1c694,Robert Gonzalez,41,Female,18,5,6,4.3,Marketing,Team Lead,2018,95555
+a933b52e-3fda-48ed-aebd-f7e58a6dd5bf,Debra Chen,41,Male,17,18,18,3.6,Sales,Team Lead,2004,108390
+c9a3bcdc-d11c-4396-9cad-862f2d5c76dd,Shannon Gray,41,Male,13,97,74,4.7,Marketing,Team Lead,2016,97387
+f1f7a39b-9d6a-420a-89eb-3181b63afda3,Carlos Bush,42,Female,23,77,80,2.8,Sales,Manager,2001,101041
+c9a0c495-f238-4cd6-a6ee-79c8fa1a4599,Brian Delgado,42,Female,17,32,44,1.1,Finance,Team Lead,2003,91680
+70cda6e3-96ac-4635-9090-54b4df196e62,Joshua Nelson,42,Female,19,9,31,2.5,Sales,Team Lead,2007,95072
+5cb0a572-8211-4a9e-8dc5-4d33097deb7d,Kathryn Scott,42,Female,8,5,87,4.3,Sales,Senior Developer,2009,80567
+43221bb8-bd60-4b4e-9747-55a18701ad3f,Glen Johnson,42,Male,12,74,83,3.9,HR,Team Lead,2007,100865
+6eacd325-5366-40d5-a6a2-715e057a5bb0,Walter Jones,42,Male,11,46,38,3.2,Finance,Team Lead,2013,107751
+e23df5f8-ae04-4271-88c8-e12ccbb927c4,Stephanie Bailey,43,Male,14,3,9,4.5,IT,Team Lead,2005,101133
+eb079202-84f9-493a-8d62-476c93760bb2,Steven Hernandez,43,Male,11,50,17,1.7,Sales,Senior Developer,2013,86286
+42b652cb-72a4-42e7-96a1-9c04f2f38d9e,Victor Gutierrez,43,Male,10,86,71,2,IT,Team Lead,2014,104341
+0a519622-9792-4d93-977a-11e98a64f153,Stephanie Lawson,44,Female,15,58,89,4.3,Sales,Team Lead,2004,102592
+44fda142-19ff-4292-ac19-966ebdd3f6f7,Johnathan Williams,44,Female,21,23,40,3,Finance,Manager,2010,109581
+8a9db0d8-de08-4af9-be73-ecdb1f6fce94,Patrick Green,44,Female,24,67,91,4,Marketing,Manager,2013,104209
+e4f38609-28ee-4992-826d-0796322d0437,Vicki Kim,44,Female,11,29,17,1.3,IT,Senior Developer,2014,90310
+6119fed7-b216-4502-8b92-78a176753dbe,Jerry Mccoy,44,Male,17,89,0,2.1,IT,Senior Developer,2003,93702
+bb14a2f8-6ccf-431a-acbe-2857fea6fc24,Alexis Smith DDS,44,Male,16,60,80,3.2,HR,Senior Developer,2007,80976
+07a5cda7-1bc4-41bc-acca-7cce065478da,Matthew Martin,44,Male,18,18,29,3.7,Sales,Manager,2008,110621
+687b6717-d459-4226-9377-fd97b07e87f3,Heather Mueller,45,Female,11,0,52,2.8,Finance,Senior Developer,2008,87114
+54c5fd7e-a1a3-439d-9b35-16a97f1be9da,Michael Raymond,45,Female,12,81,58,4.3,IT,Team Lead,2013,100280
+bc820f76-7e7f-43a8-a3af-cbe25217a3b8,Angela Carpenter,45,Female,18,58,6,3.9,HR,Manager,2013,102633
+aaeb9a12-b26f-4fc7-b59a-1d89f728f4f7,Jessica Robinson,45,Male,14,37,60,1.8,Finance,Team Lead,2005,101100
+d6613d7a-a270-490a-8fd8-55045cbff422,Erin Smith,46,Male,15,44,37,3.7,Marketing,Team Lead,2013,105893
+c0898bd3-8afb-4405-8951-155b1ed00b38,Alexis Hickman,47,Female,23,11,70,3.7,Marketing,Manager,2006,113716
+8863b95b-7ec2-4fdc-b07a-a12f773a3473,David Odom,47,Female,20,41,61,3.1,HR,Team Lead,2009,95289
+3b69b695-c751-4dfe-86a7-1c39e4cded8c,Michael Moore,48,Female,13,47,57,1.1,HR,Team Lead,2005,100592
+2b8d7e91-2f89-41b9-a3de-d86bd66eb86c,Patricia Ortega,48,Female,16,51,90,1.6,Sales,Manager,2009,117458
+ee776910-ffa7-40d8-8c1c-7abb73957b96,Jessica Tate,48,Male,17,66,4,2,HR,Manager,2016,115170
+bab79fc1-c385-4540-854e-685e9c990a5e,Calvin Mullen,49,Female,24,76,87,3.1,Marketing,Manager,1998,107320
+1f80b972-86e6-4204-b5a4-b4996a6f9305,Stacy Wilson,49,Female,14,23,28,1.2,Finance,Team Lead,2006,103586
+a0ba24a4-8bf9-40cc-bdba-70b22755c2db,Timothy Johnson,49,Male,24,45,81,2.2,HR,Manager,2012,105706
+d0df7eec-c74b-475b-b2a9-3d0ca9cb9081,Renee Jones,50,Female,16,54,93,3,IT,Team Lead,2007,101416
+9fe52a00-b465-4cb5-9acd-00a656c67a7d,Kevin Welch,50,Male,17,52,21,3.5,Finance,Manager,2000,100014
+d8bac926-4eab-4ae4-b519-fc7aae7a8ebc,Rhonda Skinner,50,Male,14,22,75,2.4,Marketing,Team Lead,2012,103407
+2dff3eb8-fc46-45cb-a033-165e06eb6e5d,Amy Carr,51,Female,24,75,37,4.9,Finance,Manager,2008,114384
+a296851a-60f5-40f0-9ba2-74f5948cad5b,Patrick Manning,51,Male,16,98,25,1.2,HR,Manager,2000,116473
+4ddc9ccf-d056-40b1-9485-01a204762d27,Daniel Mata,51,Male,25,47,1,3.8,IT,Manager,2007,119208
+85519da9-c717-4391-ad97-34114114bfc3,Katrina Williams,51,Male,15,80,23,3.2,IT,Manager,2009,107898
+f09e407a-718c-44f3-ace6-b5d1198e867e,Anthony Barton,54,Male,20,54,89,2.6,Marketing,Manager,1999,119567
+ef9ff3af-17e1-4724-83d8-8ca12cb5dd50,Ronald Flores,54,Male,19,56,24,3.8,Sales,Manager,2004,107080
+794899c0-9a4a-408b-a2ad-8f0f295f342f,Jon Hays,54,Male,22,38,96,1.9,Sales,Manager,2011,117951
+56d50a9c-3ecd-40e4-bf4c-cb253955618a,Kathleen May,55,Female,19,41,87,3.1,Sales,Manager,2010,110104
+946dfb6c-de84-40ed-a874-eef0c94dd919,Mark Wilson,57,Female,23,2,94,3.7,Sales,Manager,1999,111381
+3b3f7f65-a55b-48c7-a2de-8c9b58c983ef,Adrian Walker,57,Female,17,60,18,3.6,Finance,Manager,2002,102771
+308ef944-9379-4a8f-b09b-6bf553978675,Sarah Fernandez,57,Female,23,84,8,1.9,HR,Manager,2006,115901
+315ddb55-b326-41f1-a2dd-dc827de2e092,Jesse Solis,58,Female,19,3,72,4.7,IT,Manager,2006,108122
+04f4b6a9-81e8-49b6-a564-f7c9f8da0927,Janet Campbell,58,Female,20,68,63,1.4,Finance,Manager,2010,108449
+b8d9d708-07b5-429c-b92a-e23c1a1f7daf,Joshua Fowler,58,Male,19,63,55,1.2,Marketing,Manager,2013,119085
+e9adecc5-4576-4f97-8151-8f10808e01c4,Anthony Roberson,59,Female,19,55,76,2.8,IT,Manager,1999,112540
+609d92c5-f94e-414d-ba83-1d782ce0e2eb,Debbie Torres,59,Female,20,50,85,1.9,Finance,Manager,2014,103172
+b031b30a-ddcb-46e2-a0a3-0bce4b4639c4,Andrew Dalton,60,Female,17,35,60,4.5,Finance,Manager,2003,116039

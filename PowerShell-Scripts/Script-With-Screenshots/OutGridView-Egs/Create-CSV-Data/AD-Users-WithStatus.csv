@@ -1,0 +1,8 @@
+SamAccountName,UserPrincipalName,MemberOf,Name,Enabled,FirstName,LastName
+chandler.m.bing,chandler.m.bing@easysystems.in,"CN=Project-Manager,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in",Chandler Muriel Bing,TRUE,Chandler,Bing
+ross.e.geller,ross.e.geller@easysystems.in,"CN=Developer,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in",Ross Eustace Geller,TRUE,Ross,Geller
+phoebe.p.buffay,phoebe.p.buffay@easysystems.in,"CN=Tester,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in",Phoebe Pamela Buffay,FALSE,Phoebe,Buffay
+monica.e.geller,monica.e.geller@easysystems.in,"CN=Team-Lead,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in",Monica Elizabeth Geller,FALSE,Monica,Geller
+joey.f.tribbiani,joey.f.tribbiani@easysystems.in,"CN=SystemAdmin,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in",Joseph Francis Tribbiani,TRUE,Joey,Tribbiani
+rachel.k.greene,rachel.k.greene@easysystems.in,"CN=Support,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in",Rachel Karen Greene,FALSE,Rachel,Greene
+gunther.cp,gunther.cp@easysystems.in,"CN=Sales,OU=South Korea,OU=NP-Chat-App,DC=easysystems,DC=in",Gunther Central Perk,FALSE,Gunther,Central Perk

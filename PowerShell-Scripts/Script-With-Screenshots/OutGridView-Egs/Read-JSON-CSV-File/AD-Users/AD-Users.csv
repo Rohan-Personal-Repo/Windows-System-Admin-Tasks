@@ -1,0 +1,8 @@
+"Name","Surname","DisplayName","SamAccountName","UserPrincipalName","MemberOf","Enabled"
+"Chandler","Bing","Chandler Muriel Bing","chandler.m.bing","chandler.m.bing@easysystems.in","CN=Project-Manager,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in","True"
+"Ross","Geller","Ross Eustace Geller","ross.j.geller","ross.j.geller@easysystems.in","CN=Developer,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in","True"
+"Phoebe","Buffay","Phoebe Pamela Buffay","phoebe.a.buffay","phoebe.a.buffay@easysystems.in","CN=Tester,OU=India,OU=NP-Chat-App,DC=easysystems,DC=in","False"
+"Monica","Geller","Monica Elizabeth Geller","monica.f.geller","monica.f.geller@easysystems.in","CN=Team-Lead,OU=Canada,OU=NP-Chat-App,DC=easysystems,DC=in","False"
+"Joey","Tribbiani","Joseph Francis Tribbiani","joey.f.tribbiani","joey.f.tribbiani@easysystems.in","CN=SystemAdmin,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in","True"
+"Rachel","Greene","Rachel Karen Greene","rachel.k.greene","rachel.k.greene@easysystems.in","CN=Support,OU=Philippines,OU=NP-Chat-App,DC=easysystems,DC=in","False"
+"Gunther","Central Perk","Gunther Central Perk","gunther.cp","gunther.cp@easysystems.in","CN=Sales,OU=South-Korea,OU=NP-Chat-App,DC=easysystems,DC=in","False"
